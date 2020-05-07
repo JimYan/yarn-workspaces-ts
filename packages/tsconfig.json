@@ -1,7 +1,4 @@
 {
-    "files": [],
-    "references": [
-        { "path": "x-cli" },
-        { "path": "x-core" }
-    ]
+  "files": [],
+  "references": [{ "path": "x-a" }, { "path": "x-b" }]
 }
