@@ -5,6 +5,7 @@
     "start": "lerna run start",
     "build": "lerna run build",
     "test": "lerna run test",
+    "doc": "lerna run deploy-docs",
     "clean": "rimraf packages/**/lib"
   },
   "devDependencies": {
