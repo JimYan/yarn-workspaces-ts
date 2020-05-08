@@ -15,7 +15,7 @@
 
 ## Directory Structure
 
-Put each package under the `packages` directory.
+Put each package under the `packages` directory..
 
 ```
 .
