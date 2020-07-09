@@ -66,3 +66,13 @@ typings/
 
 lib/
 dist
+packages/**/*.d.ts
+packages/**/*.js
+
+.DS_Store
+lerna-debug.log
+npm-debug.log
+yarn-error.log
+/**/npm-debug.log
+/packages/**/.npmignore
+/packages/**/LICENSE
