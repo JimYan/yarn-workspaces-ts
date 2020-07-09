@@ -1,17 +1,17 @@
 # yarn workspace project template
 
-![Node.js CI](https://github.com/JimYan/yarn-workspaces-ts/workflows/Node.js%20CI/badge.svg)
+![Node.js CI](https://github.com/JimYan/load-balancer/workflows/Node.js%20CI/badge.svg)
 
 ## Tools
 
-- yarn: NPM client.
-- Lerna: Multiple packages management tool.
-- TypeScript: `^3.0.0` supports project references.
-- Jest: ^23.6.0
-- prettier
-- tslint
-- rollup
-- typedoc
+-   yarn: NPM client.
+-   Lerna: Multiple packages management tool.
+-   TypeScript: `^3.0.0` supports project references.
+-   Jest: ^23.6.0
+-   prettier
+-   tslint
+-   rollup
+-   typedoc
 
 ## Directory Structure
 
@@ -59,28 +59,28 @@ Put each package under the `packages` directory..
 
 Using [yarn workspace feature](https://yarnpkg.com/en/docs/workspaces), configure the following files:
 
-- /package.json
+-   /package.json
 
 Append the `workspaces` key.
 
 ```json
 {
-  "private": true,
-  "workspaces": ["packages/*"]
+    "private": true,
+    "workspaces": ["packages/*"]
 }
 ```
 
-- lerna.json
+-   lerna.json
 
 Set `npmClient` `"yarn"` and turn `useWorkspaces` on.
 
 ```json
 {
-  "lerna": "2.2.0",
-  "packages": ["packages/*"],
-  "npmClient": "yarn",
-  "useWorkspaces": true,
-  "version": "1.0.0"
+    "lerna": "2.2.0",
+    "packages": ["packages/*"],
+    "npmClient": "yarn",
+    "useWorkspaces": true,
+    "version": "1.0.0"
 }
 ```
 
@@ -101,11 +101,11 @@ For example, the following code depends a module `x-core` located at other packa
 
 ```ts
 /* packages/x-a/src/index.ts */
-import { awesomeFn } from "@quramy/x-b";
+import {awesomeFn} from '@quramy/x-b';
 
 export function cli() {
-  awesomeFn();
-  return Promise.resolve(true);
+    awesomeFn();
+    return Promise.resolve(true);
 }
 ```
 
